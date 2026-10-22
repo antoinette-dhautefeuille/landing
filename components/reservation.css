@@ -1,0 +1,61 @@
+.reservation-form {
+    display: none;
+    width: 90%;
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 40px 30px;
+    background-color: #fffdf9;
+    border-radius: 12px;
+    text-align: center;
+    scroll-margin-top: 30px;
+}
+
+.reservation-form:target {
+    display: block;
+}
+
+.reservation-form .eyebrow {
+    margin-bottom: 12px;
+    color: #c98268;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.reservation-form h2 {
+    margin: 0 0 15px;
+    color: #293b30;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.3rem, 5vw, 3rem);
+    font-weight: 500;
+}
+
+.reservation-intro {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    color: #77796f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.reservation-form iframe {
+    display: block;
+    width: 100%;
+    min-height: 650px;
+    border: none;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .reservation-form {
+        width: 95%;
+        margin: 30px auto;
+        padding: 25px 15px;
+    }
+
+    .reservation-form iframe {
+        min-height: 750px;
+    }
+
