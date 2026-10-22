@@ -1,0 +1,44 @@
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+}
+
+/* Cartes individuelles */
+.card {
+    flex: 1 1 250px;
+    max-width: 350px;
+    padding: 20px;
+    background-color: #fffdf9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #00000010;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.7rem;
+    color: #425747;
+}
+
+.card p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: #77796f;
+}

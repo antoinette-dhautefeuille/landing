@@ -1,0 +1,90 @@
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 8%;
+    text-align: center;
+
+    background-color: #f8f5ef;
+    background-image:
+        linear-gradient(#f8f5efb8, #f8f5efb8),
+        url("https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1800&q=85");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero-subtitle {
+    margin-bottom: 25px;
+    color: #c98268;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    margin-bottom: 25px;
+    color: #293b30;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-weight: 500;
+    line-height: 1.05;
+}
+
+.hero h1 em {
+    color: #647963;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin: 0 auto 35px;
+    color: #4c5149;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+.hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 18px 30px;
+
+    background-color: #425747;
+    color: #fffdf9;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #293b30;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: 75vh;
+        padding: 60px 6%;
+    }
+
+    .hero-subtitle {
+        font-size: 0.65rem;
+        letter-spacing: 2px;
+    }
+
+    .hero-text {
+        font-size: 0.9rem;
+    }
+}
